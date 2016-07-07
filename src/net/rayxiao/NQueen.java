@@ -6,7 +6,8 @@ import java.util.Stack;
  * Created by rxiao on 7/5/16.
  */
 public class NQueen {
-    public int count=0;
+    public int count = 0;
+
     public static class Pos {
         public Pos(int x, int y) {
             this.x = x;
@@ -29,7 +30,7 @@ public class NQueen {
     public static void main(String[] args) {
         NQueen nq = new NQueen();
         nq.iterInternal(0, new Stack<Pos>());
-        System.out.println("count is:"+nq.count);
+        System.out.println("count is:" + nq.count);
 
     }
 
@@ -37,7 +38,7 @@ public class NQueen {
         if (lineNo > W) {
             return;
         }
-        for (int i = 0; i < H ; i++) {
+        for (int i = 0; i < H; i++) {
             Pos newPos = new Pos(lineNo, i);
             if (valid(currentQueens, newPos)) {
                 if (currentQueens.size() >= DEPTH - 1) {

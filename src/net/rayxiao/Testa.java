@@ -3,8 +3,6 @@ package net.rayxiao;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
-
 /**
  * Created by rxiao on 7/6/16.
  */
@@ -14,13 +12,13 @@ public class Testa {
         list.add(1);
         list.add(2);
         list.add(3);
-        Integer[] a = list.stream().map(x-> {
-            System.out.println(x.toString());
-            return x;
-        }
+        Integer[] a = list.stream().map(x -> {
+                    System.out.println(x.toString());
+                    return x;
+                }
         ).toArray(Integer[]::new);
 
-        Object r2 =  (Runnable)() -> System.out.println("Howdy, world!");
-        ((Runnable)r2).run();
+        Object r2 = (Runnable) () -> System.out.println("Howdy, world!");
+        ((Runnable) r2).run();
     }
 }
