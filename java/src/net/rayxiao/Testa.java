@@ -2,6 +2,7 @@ package net.rayxiao;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Created by rxiao on 7/6/16.
@@ -20,5 +21,8 @@ public class Testa {
 
         Object r2 = (Runnable) () -> System.out.println("Howdy, world!");
         ((Runnable) r2).run();
+        System.out.println(5/2);
+        Pattern p;
+
     }
 }
