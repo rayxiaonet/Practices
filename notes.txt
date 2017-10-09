@@ -1,2 +1,5 @@
 visit:
-all palindromes
+all palindromes :214
+
+KMP
+Priority Queue, Heap
