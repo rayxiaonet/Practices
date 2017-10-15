@@ -1,5 +1,11 @@
 visit:
-all palindromes :214
-
+all palindromes :
+    214
+    336. Palindrome Pairs
 KMP
 Priority Queue, Heap
+
+
+MinMax
+
+UnionFind
